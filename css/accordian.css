@@ -1,0 +1,106 @@
+/* Add your custom CSS styles here */
+
+.custom-tab-container {
+    display: flex;
+    margin-bottom: 10px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 500px) {
+    .custom-tab-container{
+        display: grid;
+        justify-items: center;
+        width: 100%;
+    }
+    .custom-tab{
+        width: 100%;
+    }
+}
+
+.custom-tab {
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 18px;
+    transition: .5s ease-in-out;
+    
+}
+.custom-tab:hover {
+    background-color: #1c75bc;
+    color: white;
+    transition: .5s ease-in-out;
+}
+
+
+.custom-tab.active {
+    background-color: #1c75bc;
+    color: white; /* Change the background color for the active tab */
+}
+
+.custom-tab:last-child {
+    margin-right: 0;
+}
+
+.custom-container-holder {
+    background: #ffffff;
+    padding: 10px;
+    
+}
+
+.custom-content {
+    display: none;
+    
+}
+
+.sscontent{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+   
+}
+.sscontent p{
+    margin: 3%;
+   
+} 
+.sservicecardholder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    flex-wrap: wrap;
+    
+    
+}
+
+@media (min-width:0px) and (max-width:500px){
+    .sservicecardholder{
+        flex-direction: column;
+        width: 100%;
+    }
+    .sservicecard{
+        width: 100%;
+    }
+}
+.sservicecard{
+    min-width: 25%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 1%;
+   
+}
+
+.custom-content.active {
+    display: block; /* Show the content with active class */
+}
+
+.custom-content img {
+    max-width: 100%;
+    height: auto;
+}
